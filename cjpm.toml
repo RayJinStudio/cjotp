@@ -1,0 +1,14 @@
+[dependencies]
+
+[package]
+  vendor = "Ray"
+  cjc-version = "0.53.4"
+  compile-option = ""
+  description = "The Cangjie One-Time Password Library"
+  link-option = ""
+  name = "cjotp"
+  output-type = "static"
+  src-dir = "src"
+  target-dir = "build"
+  version = "1.0.0"
+  package-configuration = {}
