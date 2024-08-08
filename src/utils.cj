@@ -75,6 +75,14 @@ func buildUrl(
         }
     }
 
+    if (let Some(imageVal) <- image) {
+        if (imageVal.startsWith("https")) {
+            urlArgs.add("image", imageVal)
+        } else {
+            throw IllegalArgumentException("Image URL must start with 'https'")
+        }
+    }
+
     let url: String = "otpauth://${otpType}/${label}?${urlArgs.toEncodeString()}"
     return url
 }
