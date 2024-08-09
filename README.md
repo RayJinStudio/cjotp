@@ -71,7 +71,7 @@ main(): Int64 {
 
     // sleep 25s
     println("Sleep 25s")
-    sleep(Duration.second * 30)
+    sleep(Duration.second * 25)
     if(TOTP(key).verify(tpassword)) {
         println("After 25s Password is valid")
     } else {
